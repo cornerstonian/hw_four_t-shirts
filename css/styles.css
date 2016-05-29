@@ -1,3 +1,13 @@
+/*
+Hey Jesse, hope you're having a great weekend.
+According to my understanding, absolutely positioned elements
+are removed from normal document flow  and repositioned based on the top,right,bottom,
+or left offset values, depending on whether or not the parent element is explicitly positioned.
+I gave .redo a position of absolute and its parent, an image a position of relative,
+yet I can't seem to get the square (.redo) to be positioned relative to its parent.
+Please help when time permits.
+*/
+
 * {
  color: #81bce6;
  font-size: 0;
@@ -25,11 +35,14 @@ margin: 20px;
 
 .shirt-image img {
   width:100%;
+  position: relative;
 }
+
 
 .redo {
 position: absolute;
-top: 0px, left:0px;
+top: 0px;
+left: 0px;
 border: solid 2px #81bce6;
 }
 
