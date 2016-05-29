@@ -1,0 +1,70 @@
+* {
+ color: #81bce6;
+ font-size: 0;
+ box-sizing: border-box;
+}
+
+span{
+  font-size: 15px;
+}
+
+
+.container {
+margin: 20px;
+}
+
+.shirtCol{
+  width:33%
+}
+
+.shirt-image {
+  width: 100%;
+  border: solid 2px #81bce6;
+}
+
+
+.shirt-image img {
+  width:100%;
+}
+
+.redo {
+position: absolute;
+top: 0px, left:0px;
+border: solid 2px #81bce6;
+}
+
+.option-bar {
+display: flex;
+width: 100%;
+}
+
+.icons img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.change i:hover {
+  color: #fff;
+}
+
+.icons{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: solid 2px #81bce6;
+  border-left: solid 1px #81bce6;
+  border-right: solid 1px
+}
+
+
+.footer-bar {
+  display: flex;
+}
+
+
+
+.price{
+  float:right;
+  font-weight: bold;
+}
