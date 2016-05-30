@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <meta charset="utf-8">
-    <title>T-Shirts Lab</title>
-  </head>
-  <body>
-    <div class="container">
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta charset="utf-8">
+        <title>T-Shirts Lab</title>
+    </head>
+    <body>
+      <div class="container">
 
-        <div class="shirtCol">
-
-          <div class="shirt-image">
-            <img class="blue-parent" src="images/blueshirtfront.jpg" alt="blue-shirt">
-            <i class="material-icons redo">redo</i>
-          </div>
+          <div class="shirtCol">
+            <div class="shirt-image">
+              <img class="blue-front" src="images/blueshirtfront.jpg" alt="blue-shirt">
+              <!-- <img class="shirtback" src="images/blueshirtback.jpg" alt="blue-shirt-back"> -->
+              <!-- <li><i class="material-icons redo change">redo</i><li> -->
+            </div>
 
           <div class="option-bar">
-            <div class="icons">
-              <i class="material-icons change">autorenew</i>
-            </div>
-            <div class="icons">
-              <i class="material-icons change">favorite_border</i>
-            </div>
-            <div class="icons hover">
-              <span class="change">XL</span>
-            </div>
-            <div class="icons">
-              <img class="change" src="images/blueswatch.jpg " alt="blueswatch">
-            </div>
+            <ul class="items">
+                <li><i class="material-icons change">autorenew</i></li>
+                <li><i class="material-icons change">favorite_border</i></li>
+                <li>
+                  <i class="material-icons">stop</i>
+                  <div class="diff-colors">
+                    <img src="images/colorswatches.jpg" alt="shirt-sizes">
+                  </div>
+                </li>
+                  <li>
+                    <span class="change size">XL</span>
+                    <div class="size-chart">
+                      <img src="images/shirtsizes.jpg" alt="shirt-sizes">
+                    </div>
+                </li>
+                <li>
+                  <i class="material-icons change cart">shopping_cart</i>
+                </li>
+            </ul>
+          </div>
 
-            <div class="icons cart ">
-              <i class="material-icons change">shopping_cart</i>
-            </div>
+          <div class="footer">
+            <span class="cause">Save My Trees </span>
+            <span class="price">$29</span>
+          </div>
         </div>
-
-        <div class="footer">
-          <span class="cause">Save My Trees </span>
-          <span class="price">$29</span>
-        </div>
-
       <!-- <div class="pink-shirt">
         <div class="shirt"></div>
         <div class="options-bar"></div>

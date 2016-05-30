@@ -1,3 +1,8 @@
+/*
+-center icons
+-add/position redo button
+add html for other two shirts
+*/
 
 
 * {
@@ -27,7 +32,6 @@ margin: 20px;
 
 .shirt-image img {
   width:100%;
-  position: relative;
 }
 
 
@@ -35,49 +39,104 @@ margin: 20px;
   position: relative;
 }
 ​
-​
 .redo {
   position: absolute;
-  top: -2px;
-  right: 379px;
+  top: 0px;
+  right: 0px;
   border: solid 2px #81bce6;
 }
 
 .option-bar {
 display: flex;
-width: 100%;
 }
 
-.icons img {
-  margin-top: 5px;
-  margin-bottom: 5px;
+
+.diff-colors  img {
+
+      border: solid 2px #81bce6;
+      width: 60px;
+      height: 66px;
+      position: absolute;
+      bottom: 40px;
+      left: -8px;
+      opacity: 0;
 }
 
-.change i:hover {
-  color: #fff;
+.size-chart  img {
+      border: solid 2px #81bce6;
+      width: 68px;
+      height: 160px;
+      position: absolute;
+      bottom: 40px;
+      left: -8px;
+      opacity: 0;
 }
 
-.icons{
-  display:flex;
-  align-items: center;
-  justify-content: center;
+
+
+ul {
+  display: flex;
   width: 100%;
+  padding:0;
+  margin: 0
+}
+
+.items li {
   border-bottom: solid 2px #81bce6;
   border-left: solid 1px #81bce6;
-  border-right: solid 1px
+  border-rigt: solid 1px #81bce6;
+  width: 50%;
 }
 
+
+li {
+  position: relative;
+}
+
+ul:last-child {
+  border-right: solid 2px #81bce6;
+}
+
+ {
+  background-color: red
+}
+
+li:hover > .diff-colors > img {
+  opacity: 1;
+}
+
+li:hover > .size-chart > img {
+  opacity: 1;
+}
 
 .footer-bar {
   display: flex;
 }
 
-.icons:hover {
+li:hover {
+
   background-color: #81bce6;
+
+}
+li:hover > .material-icons {
+  color: #FFF
+}
+li:hover > span {
+  color: #FFF
+}
+/*.change:hover {
+  color: #fff;
+}*/
+
+
+.swatch:hover {
+  border: solid 2px #fff;
 }
 
-.change:hover {
-  color: #fff;
+
+.material-icons{
+  line-height: 39px;
+  width:100%;
 }
 
 /*div .cart {
