@@ -4,25 +4,26 @@
 add html for other two shirts
 */
 
+.container {
+  display:flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin: 20px;
+}
 
-* {
+.shirtCol {
  color: #81bce6;
+ padding: 10px;
  font-size: 0;
  box-sizing: border-box;
 }
+
 
 span{
   font-size: 15px;
 }
 
-
-.container {
-margin: 20px;
-}
-
-.shirtCol{
-  width:33%
-}
 
 .shirt-image {
   width: 100%;
@@ -39,20 +40,19 @@ margin: 20px;
   position: relative;
 }
 ​
-.redo {
+/*.redo {
   position: absolute;
   top: 0px;
   right: 0px;
   border: solid 2px #81bce6;
-}
+}*/
 
 .option-bar {
-display: flex;
+   display: flex;
 }
 
 
 .diff-colors  img {
-
       border: solid 2px #81bce6;
       width: 60px;
       height: 66px;
@@ -89,17 +89,19 @@ ul {
 }
 
 
+
+
 li {
   position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 ul:last-child {
   border-right: solid 2px #81bce6;
 }
 
- {
-  background-color: red
-}
+
 
 li:hover > .diff-colors > img {
   opacity: 1;
@@ -107,6 +109,11 @@ li:hover > .diff-colors > img {
 
 li:hover > .size-chart > img {
   opacity: 1;
+}
+
+li  {
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-bar {
@@ -124,24 +131,31 @@ li:hover > .material-icons {
 li:hover > span {
   color: #FFF
 }
-/*.change:hover {
-  color: #fff;
-}*/
 
-
-.swatch:hover {
-  border: solid 2px #fff;
+.items .material-icons{
+  position: relative;
+  top: 1px;
+  left: 10px;
 }
 
+.items > span {
+  position: relative;
+  top: 1px;
+  left: 10px;
+}
 
 .material-icons{
   line-height: 39px;
   width:100%;
 }
 
-/*div .cart {
-border-right: solid px #81bce6;
-}*/
+.yellow-stop {
+  color: #d8ad7a;
+}
+
+.pink-stop {
+   color: #d482aa;
+}
 
 .price{
   float:right;
